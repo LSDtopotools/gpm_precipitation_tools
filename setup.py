@@ -16,7 +16,7 @@ test_requirements = [ ]
 
 setup(
     author="Marina Ruiz Sanchez-Oro",
-    author_email='marina.ruiz.sao@ed.ac.uk',
+    author_email='marina.ruiz.so@ed.ac.uk',
     python_requires='>=3.6',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
@@ -28,7 +28,7 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
     ],
-    description="Package for analysis[C[C[D[D[D[D[D[D[Ddownloading and analysisng NASA Glocabbal Precipitation Measurement mission data.",
+    description="Package for downloading and analysing NASA Global Precipitation Measurement mission data.",
     entry_points={
         'console_scripts': [
             'gpm_precipitation_tools=gpm_precipitation_tools.cli:main',

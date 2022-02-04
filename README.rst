@@ -16,7 +16,7 @@ gpm_precipitation_tools
 
 
 
-Package for analysis[C[C[D[D[D[D[D[D[Ddownloading and analysisng NASA Glocabbal Precipitation Measurement mission data.
+Package for downloading and analysing NASA Global Precipitation Measurement mission data.
 
 
 * Free software: MIT license
