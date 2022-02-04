@@ -6,8 +6,8 @@ gpm_precipitation_tools
 .. image:: https://img.shields.io/pypi/v/gpm_precipitation_tools.svg
         :target: https://pypi.python.org/pypi/gpm_precipitation_tools
 
-.. image:: https://img.shields.io/travis/MarinaRuizSO/gpm_precipitation_tools.svg
-        :target: https://travis-ci.com/MarinaRuizSO/gpm_precipitation_tools
+.. image:: https://img.shields.io/travis/LSDtopotools/gpm_precipitation_tools.svg
+        :target: https://travis-ci.com/LSDtopotools/gpm_precipitation_tools
 
 .. image:: https://readthedocs.org/projects/gpm-precipitation-tools/badge/?version=latest
         :target: https://gpm-precipitation-tools.readthedocs.io/en/latest/?version=latest

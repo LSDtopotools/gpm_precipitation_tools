@@ -5,9 +5,9 @@ Credits
 Development Lead
 ----------------
 
-* Marina Ruiz Sanchez-Oro <marina.ruiz.sao@ed.ac.uk>
+* Marina Ruiz Sanchez-Oro <marina.ruiz.so@ed.ac.uk>
 
 Contributors
 ------------
 
-None yet. Why not be the first?
+* Guillaume Goodwin
