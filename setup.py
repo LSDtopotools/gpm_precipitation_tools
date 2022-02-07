@@ -10,7 +10,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Click>=7.0', ]
+requirements = ['numpy','pandas','rasterio','scipy','cartopy','fiona','geopandas','pyproj','gdal','utm','matplotlib', 'shapely']
 
 test_requirements = [ ]
 
@@ -31,7 +31,8 @@ setup(
     description="Package for downloading and analysing NASA Global Precipitation Measurement mission data.",
     entry_points={
         'console_scripts': [
-            'gpm_precipitation_tools=gpm_precipitation_tools.cli:main',
+            'PPT_CMD_RUN=gpm_precipitation_tools.gpm_precipitation_tools.PPT_CMD_RUN:main',
+            'process_timeseries_files_pipeline=gpm_precipitation_tools.gpm_precipitation_tools.process_timeseries_files_pipeline:main'
         ],
     },
     install_requires=requirements,
@@ -44,6 +45,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/LSDtopotools/gpm_precipitation_tools',
-    version='0.1.0',
+    version='0.2.0',
     zip_safe=False,
 )

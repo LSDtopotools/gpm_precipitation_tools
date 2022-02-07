@@ -1,14 +1,16 @@
 """Console script for gpm_precipitation_tools."""
 import sys
-import click
+import argparse
 
 
-@click.command()
-def main(args=None):
-    """Console script for gpm_precipitation_tools."""
-    click.echo("Replace this message by putting your code into "
-               "gpm_precipitation_tools.cli.main")
-    click.echo("See click documentation at https://click.palletsprojects.com/")
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('_', nargs='*')
+    args = parser.parse_args()
+
+    print("Arguments: " + str(args._))
+    print("Replace this message by putting your code into "
+          "gpm_precipitation_tools.cli.main")
     return 0
 
 
