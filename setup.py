@@ -31,8 +31,8 @@ setup(
     description="Package for downloading and analysing NASA Global Precipitation Measurement mission data.",
     entry_points={
         'console_scripts': [
-            'PPT_CMD_RUN=gpm_precipitation_tools.gpm_precipitation_tools.PPT_CMD_RUN:main',
-            'process_timeseries_files_pipeline=gpm_precipitation_tools.gpm_precipitation_tools.process_timeseries_files_pipeline:main'
+            'PPT_CMD_RUN=gpm_precipitation_tools.PPT_CMD_RUN:main',
+            'process_timeseries_files_pipeline=gpm_precipitation_tools.process_timeseries_files_pipeline:main'
         ],
     },
     install_requires=requirements,
