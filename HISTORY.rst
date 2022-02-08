@@ -18,3 +18,8 @@ History
 
 * Add missing packages
 * Update documentation
+
+0.3.1 (2022-02-08)
+------------------
+
+* Update documentation

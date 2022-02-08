@@ -47,7 +47,11 @@ Open ``python`` or type in a python script:
 
 ``import gpm_precipitation_tools``
 
+To download and pre-process the precipitation data:
+
 ``gpm_precipitation_tools.PPT_CMD_RUN.main() --ProdTP XXX --StartDate %Y-%m-%d --EndDate %Y-%m-%d --ProcessDir XXX --SptSlc XXX``
+
+To process the precipitation data and convert into timeseries or raster:
 
 ``gpm_precipitation_tools.process_timeseries_files_pipeline.main() --file_folder XXX --crs EPSG:XXXX --x_lon XX --y_lat YY --time %Y-%m-%d:%H%M%S``
 
@@ -68,6 +72,16 @@ GPM_M: GPM monthly (IMERGM v6)
 **--SptSlc** = Insert the cutline feature path (if not used, it assumes a global product)
 
 **--OP** = Call this argument if you already have the data and want to process it. Make sure you have a directory with a raw files subfolder!!!!
+
+**--file_folder** = Folder where the data to analyse lives.
+
+**--crs** = Coordinate system in format EPSG:XXXX.
+
+**--x_lon** = Longitude coordinate of the point of interest.
+
+**--y_lat** = Latitude coordinate of the point of interest.
+
+**--time** = Time of interest (format: %Y-%m-%d:%H%M%S)
 
 Credits
 -------
