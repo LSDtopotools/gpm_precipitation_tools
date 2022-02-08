@@ -33,3 +33,8 @@ History
 ------------------
 
 * Update version in init file
+
+0.3.4 (2022-02-08)
+------------------
+
+* Update entry_points
