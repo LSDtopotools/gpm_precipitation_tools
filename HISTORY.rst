@@ -28,3 +28,8 @@ History
 ------------------
 
 * Fix xarray and rioxarray imports
+
+0.3.3 (2022-02-08)
+------------------
+
+* Update version in init file
