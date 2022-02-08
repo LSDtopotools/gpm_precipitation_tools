@@ -12,3 +12,9 @@ History
 
 * Fix dependency clashes
 * Implement command line functionality.
+
+0.3.0 (2022-02-08)
+------------------
+
+* Add missing packages
+* Update documentation
