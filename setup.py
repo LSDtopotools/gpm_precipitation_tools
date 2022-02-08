@@ -10,7 +10,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['numpy','pandas','rasterio','scipy','cartopy','fiona','geopandas','pyproj','gdal','utm','matplotlib', 'shapely']
+requirements = ['numpy','pandas','rasterio','scipy','cartopy','fiona','geopandas','pyproj','gdal','utm','matplotlib', 'shapely','rioxarray','xarray']
 
 test_requirements = [ ]
 
