@@ -38,3 +38,8 @@ History
 ------------------
 
 * Update entry_points
+
+0.3.5 (2022-02-08)
+------------------
+
+* Fix package imports
