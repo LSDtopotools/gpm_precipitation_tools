@@ -69,7 +69,7 @@ GPM_M: GPM monthly (IMERGM v6)
 
 Credits
 -------
-This package is based on the code_ from Vinicius Mesquita.
+This package is based on the code_ from Vinicius Mesquita, and has been adapted by Guillaume Goodwin (University of Edinburgh/ Universita di Padova) and Marina Ruiz Sánchez-Oro (University of Edinburgh).
 
 .. _code: https://github.com/lapig-ufg/PPTs
 .. _PPTs: https://github.com/lapig-ufg/PPTs
