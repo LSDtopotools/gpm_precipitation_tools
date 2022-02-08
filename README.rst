@@ -46,7 +46,9 @@ Using the package:
 Open ``python`` or type in a python script:
 
 ``import gpm_precipitation_tools``
+
 ``gpm_precipitation_tools.PPT_CMD_RUN.main() --ProdTP XXX --StartDate %Y-%m-%d --EndDate %Y-%m-%d --ProcessDir XXX --SptSlc XXX``
+
 ``gpm_precipitation_tools.process_timeseries_files_pipeline.main() --file_folder XXX --crs EPSG:XXXX --x_lon XX --y_lat YY --time %Y-%m-%d:%H%M%S``
 
 Where,
