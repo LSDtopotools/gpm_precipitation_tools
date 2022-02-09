@@ -10,7 +10,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['numpy','pandas','rasterio','scipy','cartopy','fiona','geopandas','pyproj','gdal','utm','matplotlib', 'shapely','rioxarray','xarray']
+requirements = ['numpy','pandas','rasterio','scipy','fiona','geopandas','pyproj','gdal','utm','matplotlib', 'shapely','rioxarray','xarray']
 
 test_requirements = [ ]
 
@@ -45,6 +45,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/LSDtopotools/gpm_precipitation_tools',
-    version='0.3.8',
+    version='0.3.9',
     zip_safe=False,
 )

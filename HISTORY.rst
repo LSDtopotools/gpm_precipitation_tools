@@ -53,3 +53,13 @@ History
 ------------------
 
 * Fix more package imports in init files
+
+0.3.8 (2022-02-09)
+------------------
+
+* Fix libraries imports
+
+0.3.9 (2022-02-09)
+------------------
+
+* Remove cartopy
