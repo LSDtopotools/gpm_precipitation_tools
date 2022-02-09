@@ -45,6 +45,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/LSDtopotools/gpm_precipitation_tools',
-    version='0.3.10',
+    version='0.4.1',
     zip_safe=False,
 )
