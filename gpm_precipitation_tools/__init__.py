@@ -2,7 +2,7 @@
 
 __author__ = """Marina Ruiz Sanchez-Oro"""
 __email__ = 'marina.ruiz.so@ed.ac.uk'
-__version__ = '0.4.1'
+__version__ = '0.4.2'
 __license__ = 'MIT'
 
 # from .PPT_CMD_RUN import *
