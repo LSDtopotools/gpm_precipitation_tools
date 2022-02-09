@@ -26,3 +26,4 @@ Shapely==1.8.0
 xarray==0.20.2
 rioxarray==0.9.1
 sphinx_rtd_theme==1.0.0
+PyQt5==5.15.6
