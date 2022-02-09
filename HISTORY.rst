@@ -43,3 +43,13 @@ History
 ------------------
 
 * Fix package imports
+
+0.3.6 (2022-02-08)
+------------------
+
+* Fix more package imports
+
+0.3.7 (2022-02-08)
+------------------
+
+* Fix more package imports in init files

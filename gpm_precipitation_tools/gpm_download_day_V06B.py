@@ -32,7 +32,7 @@ import string
 import datetime
 import urllib.request
 
-from Login_UI import retrieveLogin
+from gpm_precipitation_tools.Login_UI import retrieveLogin
 
 def gpm_day_download(input_dir, Start_Date = None,End_Date = None, backslh ='\\'):
 

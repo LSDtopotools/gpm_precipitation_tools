@@ -41,16 +41,14 @@ import csv
 ################################################################################
 
 #GPM MONTH
-from gpm_download_month_V06B import gpm_month_download
+from gpm_precipitation_tools.gpm_download_month_V06B import gpm_month_download
 #GPM DAY
-from gpm_download_day_V06B import gpm_day_download
+from gpm_precipitation_tools.gpm_download_day_V06B import gpm_day_download
 #GPM 30min
-from gpm_download_30min_V06B import gpm_30min_download
+from gpm_precipitation_tools.gpm_download_30min_V06B import gpm_30min_download
 
 #AncillaryData
-from image_process import process
-#from get_info import get_info
-import General_functions as fn
+from gpm_precipitation_tools.image_process import process
 
 
 ################################################################################

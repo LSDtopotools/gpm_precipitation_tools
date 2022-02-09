@@ -41,10 +41,10 @@ setup(
     include_package_data=True,
     keywords='gpm_precipitation_tools',
     name='gpm_precipitation_tools',
-    packages=find_packages(include=['gpm_precipitation_tools', 'gpm_precipitation_tools.*']),
+    packages=find_packages(include=['gpm_precipitation_tools']),
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/LSDtopotools/gpm_precipitation_tools',
-    version='0.3.5',
+    version='0.3.8',
     zip_safe=False,
 )

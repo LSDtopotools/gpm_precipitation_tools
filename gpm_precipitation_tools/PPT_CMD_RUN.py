@@ -38,17 +38,18 @@ import csv
 ################################################################################
 
 #GPM MONTH
-from gpm_download_month_V06B import gpm_month_download
-#from gpm_precipitation_tools.gpm_download_month_V06B import *
+
+#from gpm_precipitation_tools.gpm_precipitation_tools.gpm_download_month_V06B import *
+from gpm_precipitation_tools.gpm_download_month_V06B import gpm_month_download
+
 #GPM DAY
-from gpm_download_day_V06B import gpm_day_download
+from gpm_precipitation_tools.gpm_download_day_V06B import gpm_day_download
 #GPM 30min
-from gpm_download_30min_V06B import gpm_30min_download
+from gpm_precipitation_tools.gpm_download_30min_V06B import gpm_30min_download
 
 #AncillaryData
-#from gpm_precipitation_tools.image_process import process
-#from get_info import get_info
-#import gpm_precipitation_tools.General_functions as fn
+from gpm_precipitation_tools.image_process import process
+from gpm_precipitation_tools.General_functions import *
 
 #=============================================================================
 # This is just a welcome screen that is displayed if no arguments are provided.
@@ -218,7 +219,7 @@ def main(args=None):
 
 	if arglist[0] == 'GPM_M': # We do not expect this case to arise in our use case
 		for n in range(0,len(zero_list),1):
-			fn.download_months(arglist, zero_list, zero_dir, process_dir, backslh, n)
+			download_months(arglist, zero_list, zero_dir, process_dir, backslh, n)
 
 
 
@@ -226,14 +227,14 @@ def main(args=None):
 		print('hello from GPM_D')
 		for n in range(0,len(zero_list),1):
 			print('I shall start the download')
-			fn.download_days(arglist, zero_list, zero_dir, process_dir, backslh, n)
+			download_days(arglist, zero_list, zero_dir, process_dir, backslh, n)
 			print('done with download_days')
 
 
 
 	elif arglist[0] == 'GPM_30min':
 		for n in range(0,len(zero_list)-1,1):
-			fn.download_hhs(arglist, zero_list, zero_dir, process_dir, backslh, n)
+			download_hhs(arglist, zero_list, zero_dir, process_dir, backslh, n)
 			print('done with download_hhs')
 
 
@@ -251,9 +252,9 @@ def main(args=None):
 	working_dir = process_dir + backslh #'./1/'
 	print(f'working dir: {working_dir}')
 
-	fn.maps_to_timeseries(arglist, working_dir, arglist[0])
+	maps_to_timeseries(arglist, working_dir, arglist[0])
 
-	fn.move_files(working_dir, arglist[1], arglist[2])
+	move_files(working_dir, arglist[1], arglist[2])
 	print(f'input dir data: {input_dir_data}')
 
 

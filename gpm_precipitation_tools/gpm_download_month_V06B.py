@@ -33,7 +33,7 @@ import datetime
 import numpy as np
 from urllib.request import urlopen
 
-from Login_UI import retrieveLogin
+from gpm_precipitation_tools.Login_UI import retrieveLogin
 
 def what_files_to_keep_case_1(mylist,start_month_download,end_month_download, items_to_keep):
     # for the first year of the data required, given the end date is also in that year and there is only one year to take data from
