@@ -68,3 +68,7 @@ History
 ------------------
 
 * Add PyQt5
+
+0.4.5 (2022-02-10)
+
+* Fix gdal compatibility issues (hopefully!) - add setuptools to install requirements and versions to all required packages.

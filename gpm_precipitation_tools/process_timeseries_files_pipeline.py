@@ -48,7 +48,7 @@ def main(args=None):
 	if not len(sys.argv) > 1:
 		full_paramfile = print_welcome()
 		sys.exit()
-		
+
 	parser = argparse.ArgumentParser()
 	parser.add_argument("-f", "--file_folder", dest = "file_folder", help="Folder with the files")
 	parser.add_argument("-c", "--crs", dest = "crs", help="Coordinate system in the format EPSG:XXXX")
@@ -183,6 +183,7 @@ def main(args=None):
 		"""
 		# could potentially increase functionality by adding output data format: netcdf or raster
 		joint_ds = xr.open_dataset(netcdf_filename, engine="rasterio")
+		print(joint_ds.sel(time=time_to_slice))
 		sliced_joint_ds = joint_ds.sel(time=time_to_slice).precipitation
 		date_string_name = time_to_slice.strftime('%Y%m%d-%H%M%S')
 		sliced_joint_ds.to_netcdf(f'output_precipitation_raster_{date_string_name}.nc', mode='w', format='NETCDF3_64BIT')
