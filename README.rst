@@ -47,7 +47,7 @@ To download and pre-process the precipitation data (type directly in the command
 ``PPT_CMD_RUN --ProdTP XXX --StartDate %Y-%m-%d --EndDate %Y-%m-%d --ProcessDir XXX --SptSlc XXX``
 
 
-WARNING - `process_timeseries_files_pipeline` MAY BREAK (there is currently a dependencies clash that will eventually be fixed):
+WARNING - ``process_timeseries_files_pipeline`` MAY BREAK (there is currently a dependencies clash that will eventually be fixed):
 
 To process the precipitation data and convert into timeseries or raster:
 
