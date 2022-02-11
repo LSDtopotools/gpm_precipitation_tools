@@ -41,13 +41,9 @@ Install the ``gpm_precipitation_tools`` package:
 
 ``pip install gpm_precipitation_tools``
 
-
 To download and pre-process the precipitation data (type directly in the command line):
 
 ``PPT_CMD_RUN --ProdTP XXX --StartDate %Y-%m-%d --EndDate %Y-%m-%d --ProcessDir XXX --SptSlc XXX``
-
-
-WARNING - ``process_timeseries_files_pipeline`` MAY BREAK (there is currently a dependencies clash that will eventually be fixed):
 
 To process the precipitation data and convert into timeseries or raster:
 
@@ -57,9 +53,11 @@ Where,
 
 **--ProdTP** = 'GPM_30min' (default)
 
-GPM_30min: GPM half-hourly (IMERGM v6)
-GPM_D: GPM daily (IMERGM v6)
-GPM_M: GPM monthly (IMERGM v6)
+    GPM_30min: GPM half-hourly (IMERGM v6)
+
+    GPM_D: GPM daily (IMERGM v6)
+
+    GPM_M: GPM monthly (IMERGM v6)
 
 **--StartDate** = Insert the start date (format %Y-%M-%D)
 
