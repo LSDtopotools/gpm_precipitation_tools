@@ -77,3 +77,8 @@ History
 * Fix issues with the ``process_timeseries_files_pipeline.py`` script.
 
 There are still some issues sometimes in some cases with cftime.
+
+0.4.6 (2022-02-11)
+------------------
+
+* Update gdal version to 2.2.2
