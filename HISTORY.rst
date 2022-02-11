@@ -69,6 +69,9 @@ History
 
 * Add PyQt5
 
-0.4.5 (2022-02-10)
+0.4.5 (2022-02-11)
+------------------
 
 * Fix gdal compatibility issues (hopefully!) - add setuptools to install requirements and versions to all required packages.
+* Fix issues with the ``process_timeseries_files_pipeline.py`` script.
+There are still some issues sometimes in some cases with cftime.

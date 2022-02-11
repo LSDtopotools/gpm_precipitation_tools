@@ -163,7 +163,12 @@ def main(args=None):
 			Timeseries of precipitation for the given lat, lon coordinates.
 		"""
 		joint_ds = xr.open_dataset(netcdf_filename, engine="rasterio")
-		precip_timeseries = joint_ds.sel(x=lon, y = lat, method="nearest").precipitation.to_numpy().ravel()
+		print(joint_ds)
+		print('this is the joint business')
+		print(joint_ds.sel(x=lon, y = lat, method="nearest").precipitation)
+		precip_timeseries = joint_ds.sel(x=lon, y = lat, method="nearest").precipitation
+		# this following line sometimes fails
+		#precip_timeseries = joint_ds.sel(x=lon, y = lat, method="nearest").precipitation.to_numpy().ravel()
 		return precip_timeseries
 
 	def output_precipitation_raster(time_to_slice, netcdf_filename):
@@ -183,7 +188,6 @@ def main(args=None):
 		"""
 		# could potentially increase functionality by adding output data format: netcdf or raster
 		joint_ds = xr.open_dataset(netcdf_filename, engine="rasterio")
-		print(joint_ds.sel(time=time_to_slice))
 		sliced_joint_ds = joint_ds.sel(time=time_to_slice).precipitation
 		date_string_name = time_to_slice.strftime('%Y%m%d-%H%M%S')
 		sliced_joint_ds.to_netcdf(f'output_precipitation_raster_{date_string_name}.nc', mode='w', format='NETCDF3_64BIT')

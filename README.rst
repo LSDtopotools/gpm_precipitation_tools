@@ -41,19 +41,17 @@ Install the ``gpm_precipitation_tools`` package:
 
 ``pip install gpm_precipitation_tools``
 
-Using the package:
 
-Open ``python`` or type in a python script:
+To download and pre-process the precipitation data (type directly in the command line):
 
-``import gpm_precipitation_tools``
+``PPT_CMD_RUN --ProdTP XXX --StartDate %Y-%m-%d --EndDate %Y-%m-%d --ProcessDir XXX --SptSlc XXX``
 
-To download and pre-process the precipitation data:
 
-``gpm_precipitation_tools.PPT_CMD_RUN.main() --ProdTP XXX --StartDate %Y-%m-%d --EndDate %Y-%m-%d --ProcessDir XXX --SptSlc XXX``
+WARNING - `process_timeseries_files_pipeline` MAY BREAK (there is currently a dependencies clash that will eventually be fixed):
 
 To process the precipitation data and convert into timeseries or raster:
 
-``gpm_precipitation_tools.process_timeseries_files_pipeline.main() --file_folder XXX --crs EPSG:XXXX --x_lon XX --y_lat YY --time %Y-%m-%d:%H%M%S``
+``process_timeseries_files_pipeline --file_folder XXX --crs EPSG:XXXX --x_lon XX --y_lat YY --time %Y-%m-%d:%H%M%S``
 
 Where,
 
