@@ -207,7 +207,7 @@ def gpm_month_download(outputDir, Start_Date = None,End_Date = None, backslh ='\
 
 
         for item in range(0,len(items_to_keep)):
-            os.system('wget --user=' + GetLoginInfo[0] + ' --password=' + GetLoginInfo[1] + ' --show-progress -c -q '+  url + filteredList[item] + ' -O ' + outputDir + backslh + filteredList[item])
+            os.system('wget --user=' + GetLoginInfo[0] + ' --password=' + GetLoginInfo[1] + ' --show-progress -c -q '+  url + items_to_keep[item] + ' -O ' + outputDir + backslh + items_to_keep[item])
 
             #os.system('wget --user=' + os.environ["NASA_USERNAME"] + ' --password=' + os.environ["NASA_PASSWORD"] + ' --show-progress -c -q '+  url + items_to_keep[item] + ' -O ' + outputDir + backslh + items_to_keep[item])
 
