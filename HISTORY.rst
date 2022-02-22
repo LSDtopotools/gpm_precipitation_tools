@@ -81,4 +81,11 @@ There are still some issues sometimes in some cases with cftime.
 0.4.6 (2022-02-11)
 ------------------
 
-* Update gdal version to 2.2.2
+* Update gdal version to 2.2.2.
+
+0.4.7 (2022-02-22)
+------------------
+
+* Remove requirements.
+
+* Fix bug in monthly data download.
