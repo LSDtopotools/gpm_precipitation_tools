@@ -5,7 +5,7 @@ Tools to download daily data downloaded from NASA GPM mission website (This vers
 The files in this tool are a modified version of the PPTs tool presented here: https://github.com/lapig-ufg/PPTs
 
 Authors: Marina Ruiz Sánchez-Oro, Guillaume Goodwin
-Date: 03/02/2022
+Date: 03/03/2023
 """
 
 
