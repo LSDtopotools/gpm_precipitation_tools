@@ -33,6 +33,9 @@ from osgeo import gdal, ogr, osr
 from osgeo.gdalnumeric import *
 from osgeo.gdalconst import *
 import csv
+from pathlib import Path
+import pandas as pd
+import rasterio
 
 ################################################################################
 ################################################################################
@@ -164,6 +167,54 @@ def ENVI_raster_binary_to_2d_array(file_name):
         #print image_array.shape
 
         return image_array, pixelWidth, (geotransform, inDs)
+
+
+def extract_rainfall_pxl_values(working_dir):
+
+	# incomplete functionality...
+	print('I am going to extract the rainfall values for each pixel for you')
+	files = sorted(os.listdir(working_dir)); bilfiles = []
+
+	for i in range(len(files)):
+		ending = files[i][-4:]
+		print(f"i am the ending: {ending}")
+		if ending == '.bil':
+			bilfiles.append(files[i])
+	print(bilfiles)
+
+	# make an empty csv files with the columns to be y_lat, x_lon, rainfall_mm_sec
+	dir = Path(working_dir)
+
+	#df=pd.DataFrame(columns=["lat","lon"])
+	#df.to_csv(working_dir+'in.csv', index=False)
+	incsvfile = working_dir+'in.csv'
+	outcsvfile = working_dir+'out.csv'
+
+
+	with open(incsvfile) as incsvfile, open(outcsvfile, 'w', newline='') as outcsvfile:
+	    csvreader = csv.reader(incsvfile)
+	    #print(csvreader)
+	    csvwriter = csv.writer(outcsvfile)
+
+	    fieldnames = next(csvreader)
+	    print(fieldnames)
+	    csvwriter.writerow(fieldnames)
+
+	    datasets = [rasterio.open(dir/raster) for raster in bilfiles]
+	    #print(dir/raster)
+	    #print(datasets)
+
+	    for lat, lon in csvreader:
+	        print('hi')
+	        values = []
+	        for src in datasets:
+	            values.append(next(src.sample([[float(lon), float(lat)]]))[0])
+	            print(f'values: {values}')
+
+	        csvwriter.writerow([lat, lon] + values)
+
+
+#extract_rainfall_pxl_values('../../GPM_RAW_DAY_2016-01-01_2016-01-04_processed/run_start_2016-01-01_end_2016-01-04/')
 
 
 
